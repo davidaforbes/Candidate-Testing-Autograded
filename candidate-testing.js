@@ -18,19 +18,19 @@ let candidateAnswers;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-let candidateName = input.question("What is your name, candidate? ");
+candidateName = input.question("What is your name, candidate? ");
 }
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-let candidateAnswer = input.question(question)
+candidateAnswer = input.question(question)
 
 }
 
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-if (candidateAnswer === correctAnswer){
+if (candidateAnswer == correctAnswer){
   console.log('Correct!')
 } else {
   console.log('Sorry, try again!')
